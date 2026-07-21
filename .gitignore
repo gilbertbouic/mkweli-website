@@ -1,0 +1,10 @@
+node_modules/
+package-lock.json
+package.json
+deploy-carrd.mjs
+deploy-artifacts/
+website hostinger.odt
+icon.jpeg
+UI.jpg
+*.log
+deploy-artifacts/
