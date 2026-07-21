@@ -38,9 +38,12 @@ Email already uses Hostinger MX — **do not remove MX records**.
    - TXT SPF `v=spf1 include:_spf.mail.hostinger.com ~all`
    - Google site verification TXT (if present)
 
-7. After DNS propagates (often 5–60 minutes), re-enable the custom domain:
-   - Ensure repo root has file `CNAME` containing: `mkweli.tech`
-   - GitHub → repo **Settings → Pages → Custom domain** → `mkweli.tech` → Enforce HTTPS
+7. After DNS propagates (often 5–60 minutes), attach the custom domain:
+   - In the repo root, create a file named `CNAME` containing exactly: `mkweli.tech`
+   - Commit and push, **or** set it in GitHub → **Settings → Pages → Custom domain** → `mkweli.tech`
+   - Enable **Enforce HTTPS** once the certificate is issued
+   - Until this step, the live preview remains at:
+     https://gilbertbouic.github.io/mkweli-website/
 
 ## Carrd
 
