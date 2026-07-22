@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mkweli.tech/</loc>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mkweli.tech/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mkweli.tech/" />
+    <image:image>
+      <image:loc>https://mkweli.tech/assets/og-image.jpg</image:loc>
+      <image:title>Mkweli AML — free offline sanctions screening</image:title>
+      <image:caption>Android app for OFAC, UN, EU and UK sanctions name screening</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mkweli.tech/assets/hero-brand.jpg</image:loc>
+      <image:title>Mkweli brand art</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mkweli.tech/assets/app-ui.jpg</image:loc>
+      <image:title>Mkweli AML app interface</image:title>
+    </image:image>
   </url>
 </urlset>
