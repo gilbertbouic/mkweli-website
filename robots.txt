@@ -1,4 +1,4 @@
-# https://mkweli.tech/robots.txt
+# https://aml.mkweli.tech/robots.txt
 User-agent: *
 Allow: /
 
@@ -14,4 +14,4 @@ Allow: /
 # APK is fine to crawl/link; do not index binary as a page
 # (Allow: / so download links remain discoverable)
 
-Sitemap: https://mkweli.tech/sitemap.xml
+Sitemap: https://aml.mkweli.tech/sitemap.xml

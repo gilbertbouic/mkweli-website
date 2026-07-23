@@ -1,55 +1,22 @@
-# Point mkweli.tech to the new site (GitHub Pages)
+# Mkweli AML on aml.mkweli.tech
 
-The new professional site is published at:
-https://gilbertbouic.github.io/mkweli-website/
+This product site is published at **https://aml.mkweli.tech**.
 
-Repo: https://github.com/gilbertbouic/mkweli-website
+The personal hub is **https://mkweli.tech** (repo: `mkweli-hub`).
 
-## Why DNS change is required
+## DNS (Hostinger)
 
-`mkweli.tech` currently still points at **Carrd** (A record → Cloudflare `172.66.0.70`).
-Nameservers are Hostinger (`ns1.dns-parking.com` / `ns2.dns-parking.com`).
+| Type | Name | Value |
+|------|------|-------|
+| CNAME | `aml` | `gilbertbouic.github.io` |
 
-Email already uses Hostinger MX — **do not remove MX records**.
+Do **not** remove MX/SPF records for `gilbert@mkweli.tech`.
 
-## Steps in Hostinger hPanel
+## GitHub Pages
 
-1. Log in at https://hpanel.hostinger.com  
-   Email: `gilbert@mkweli.tech` (or your Hostinger owner account)
-2. Open **Domains → mkweli.tech → DNS / Name Servers**
-3. **Edit the apex A records** for `@` / `mkweli.tech`.  
-   Remove the Carrd/Cloudflare IP (`172.66.0.70`).
-4. Add these **four A records** (GitHub Pages):
+- Custom domain: `aml.mkweli.tech` (see `CNAME` in repo root)
+- Enforce HTTPS once the certificate is approved
 
-   | Type | Name | Value              | TTL  |
-   |------|------|--------------------|------|
-   | A    | @    | 185.199.108.153    | 3600 |
-   | A    | @    | 185.199.109.153    | 3600 |
-   | A    | @    | 185.199.110.153    | 3600 |
-   | A    | @    | 185.199.111.153    | 3600 |
+## Related
 
-5. Optional **www**:
-   | Type  | Name | Value                         | TTL  |
-   |-------|------|-------------------------------|------|
-   | CNAME | www  | gilbertbouic.github.io        | 3600 |
-
-6. **Keep** existing:
-   - MX → `mx1.hostinger.com` / `mx2.hostinger.com`
-   - TXT SPF `v=spf1 include:_spf.mail.hostinger.com ~all`
-   - Google site verification TXT (if present)
-
-7. After DNS propagates (often 5–60 minutes), attach the custom domain:
-   - In the repo root, create a file named `CNAME` containing exactly: `mkweli.tech`
-   - Commit and push, **or** set it in GitHub → **Settings → Pages → Custom domain** → `mkweli.tech`
-   - Enable **Enforce HTTPS** once the certificate is issued
-   - Until this step, the live preview remains at:
-     https://gilbertbouic.github.io/mkweli-website/
-
-## Carrd
-
-You can leave the old Carrd site unpublished or disconnect the custom domain in Carrd settings so it no longer expects `mkweli.tech`.
-
-## Login notes (from website hostinger.odt)
-
-- Carrd: gilbertbouic@gmail.com (site rebuild is now GitHub Pages, not Carrd)
-- Hostinger email: gilbert@mkweli.tech
+Full apex + subdomain sequence: see `mkweli-hub` → `DNS-CUTOVER.md`.
