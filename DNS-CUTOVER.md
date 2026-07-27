@@ -10,7 +10,7 @@ The personal hub is **https://mkweli.tech** (repo: `mkweli-hub`).
 |------|------|-------|
 | CNAME | `aml` | `gilbertbouic.github.io` |
 
-Do **not** remove MX/SPF records for `gilbert@mkweli.tech`.
+Do **not** remove MX/SPF records for `support@mkweli.tech`.
 
 ## GitHub Pages
 
