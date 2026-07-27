@@ -1,9 +1,39 @@
+/* Mkweli rebrand dual-theme logos */
+.logo-light { display: block; }
+.logo-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  .logo-light { display: none; }
+  .logo-dark { display: block; }
+}
+.brand-mark-wrap { display: inline-flex; line-height: 0; }
+.brand-mark {
+  object-fit: contain !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+.brand-orb-logo {
+  display: grid !important;
+  place-items: center;
+  padding: 1.5rem !important;
+  background: #f4f4f2 !important;
+  border-radius: 24px;
+}
+.brand-orb-logo img {
+  width: min(100%, 340px) !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+@media (prefers-color-scheme: dark) {
+  .brand-orb-logo { background: #161a22 !important; }
+}
 /* =========================================================
    Mkweli AML — Marketing site
    Palette: deep navy, gold justice accent, electric blue CTA
    ========================================================= */
 
 :root {
+  --mkweli-orange: #b7522d;
+  --mkweli-orange-soft: #d46a42;
   --bg: #070b14;
   --bg-elevated: #0d1424;
   --bg-card: #111a2e;
