@@ -64,7 +64,7 @@
     // Keep primary CTA pointing at releases/latest so new versions work without republishing
     apk.setAttribute(
       "href",
-      "Mkweli_v1.0.8.apk"
+      "Mkweli_v1.0.9.apk"
     );
   }
 })();
