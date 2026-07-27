@@ -10,4 +10,4 @@
 Mkweli AML screens names against OFAC SDN, UN Security Council, EU financial sanctions and UK FCDO lists on-device, with offline support and EN/FR/PT/ES languages. Free for banks, remittance firms, MSBs and compliance teams.
 
 ## Related
-- Sister product LakazAgri (Mauritius agri): https://lakazagri.mu/
+- Sister product LakazAgri (Mauritius agri): https://lakazagri.mkweli.tech/
