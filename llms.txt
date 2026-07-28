@@ -4,7 +4,7 @@
 ## Site
 - Homepage: https://aml.mkweli.tech/
 - Contact: gilbert@mkweli.tech
-- APK: https://aml.mkweli.tech/Mkweli_v1.0.8.apk
+- APK: https://aml.mkweli.tech/Mkweli_v1.0.12.apk
 
 ## Product
 Mkweli AML screens names against OFAC SDN, UN Security Council, EU financial sanctions and UK FCDO lists on-device, with offline support and EN/FR/PT/ES languages. Free for banks, remittance firms, MSBs and compliance teams.
