@@ -1,13 +1,26 @@
 # Mkweli AML
-> Free offline sanctions screening app for financial institutions.
+> Free open-source offline sanctions name-screening app for financial institutions.
 
-## Site
-- Homepage: https://aml.mkweli.tech/
-- Contact: gilbert@mkweli.tech
-- APK: https://aml.mkweli.tech/Mkweli_v1.0.12.apk
+## Canonical facts (keep consistent)
+- Product site: https://aml.mkweli.tech/
+- Hub: https://mkweli.tech/
+- Support email: support@mkweli.tech
+- Publisher: Mkweli
+- Android package: com.mkwelimobile
+- Current version: 1.0.12 (versionCode 12)
+- Official APK only: https://aml.mkweli.tech/Mkweli_v1.0.12.apk
+- APK SHA-256: c3ca9da655a5ce2bf219b89f1396042278b87d014fb3ca789547b411d8243228
+- Source: https://github.com/gilbertbouic/MkweliMobile
+- Not on Google Play (signed sideload APK)
 
 ## Product
-Mkweli AML screens names against OFAC SDN, UN Security Council, EU financial sanctions and UK FCDO lists on-device, with offline support and EN/FR/PT/ES languages. Free for banks, remittance firms, MSBs and compliance teams.
+Mkweli AML screens names on-device against:
+- USA OFAC SDN
+- UN Security Council consolidated list
+- EU financial sanctions (FSD)
+- UK FCDO sanctions list
+
+Languages: EN / FR / PT / ES. Free, no per-seat licence. Token matching with strong/possible ranks (not full KYC / not a full AML suite).
 
 ## Related
-- Sister product LakazAgri (Mauritius agri): https://lakazagri.mkweli.tech/
+- Sister product LakazAgri: https://lakazagri.mkweli.tech/

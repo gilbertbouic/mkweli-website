@@ -864,9 +864,9 @@ a:hover {
 
 .list-count {
   margin: 0 0 0.65rem;
-  font-size: 1.75rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   color: var(--gold-soft);
 }
 
@@ -953,6 +953,55 @@ a:hover {
   color: var(--gold-soft);
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.verify-block {
+  margin: 1.35rem 0 0;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: grid;
+  gap: 0.65rem;
+}
+
+.verify-block > div {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.verify-block dt {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.verify-block dd {
+  margin: 0;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  word-break: break-all;
+}
+
+.verify-block code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  color: var(--gold-soft);
+}
+
+.verify-block code.sha {
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: #c5d0e6;
+}
+
+.verify-block a {
+  color: var(--gold-soft);
 }
 
 .checklist {

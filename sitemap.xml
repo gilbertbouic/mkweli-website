@@ -4,23 +4,15 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://aml.mkweli.tech/</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://aml.mkweli.tech/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aml.mkweli.tech/" />
     <image:image>
-      <image:loc>https://aml.mkweli.tech/assets/og-image.jpg?v=20260728b</image:loc>
-      <image:title>Mkweli AML — free offline sanctions screening</image:title>
-      <image:caption>Android app for OFAC, UN, EU and UK sanctions name screening</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://aml.mkweli.tech/assets/hero-brand.jpg</image:loc>
-      <image:title>Mkweli brand art</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://aml.mkweli.tech/assets/app-ui.jpg</image:loc>
-      <image:title>Mkweli AML app interface</image:title>
+      <image:loc>https://aml.mkweli.tech/assets/og-image.jpg?v=20260728c</image:loc>
+      <image:title>Mkweli AML v1.0.12 — free offline sanctions screening</image:title>
+      <image:caption>Open-source Android APK for OFAC, UN, EU and UK FCDO name screening</image:caption>
     </image:image>
   </url>
 </urlset>
