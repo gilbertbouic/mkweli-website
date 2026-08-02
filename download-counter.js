@@ -1,14 +1,16 @@
 (function(){
 var map={
 "aml.mkweli.tech":{p:"aml",s:1254,sel:'#apk-download,a[href*=".apk"]'},
-"lakazagri.mkweli.tech":{p:"lakazagri",s:875,sel:'#download a[href*=".apk"],#download a.btn-accent'},
-"ceb.mkweli.tech":{p:"ceb",s:28,sel:'#download a.btn-primary,a[href*=".apk"]'},
-"assimilate-pro.mkweli.tech":{p:"assimilate",s:2438,sel:'#apk-link,#download a[href*="releases"]'}
+"lakazagri.mkweli.tech":{p:"lakazagri",s:875,sel:'#download a[href*=".apk"]'},
+"ceb.mkweli.tech":{p:"ceb",s:28,sel:'#download a[href*=".apk"],a[href*=".apk"]'},
+"assimilate-pro.mkweli.tech":{p:"assimilate",s:2438,sel:'#apk-link,a[href*=".apk"]'}
 };
+function isApkHref(h){
+  return /\.apk($|[?#])/i.test(h||"");
+}
 var host=location.hostname.replace(/^www\./,"");
 var cfg=map[host];
 if(!cfg){
-// Local / preview fallbacks
 if(/aml|mkweli-website/i.test(location.pathname+location.href)) cfg=map["aml.mkweli.tech"];
 else if(/lakaz/i.test(location.pathname+location.href)) cfg=map["lakazagri.mkweli.tech"];
 else if(/ceb/i.test(location.pathname+location.href)) cfg=map["ceb.mkweli.tech"];
@@ -35,9 +37,11 @@ hostEl.setAttribute("aria-live","polite");
 var box=a.closest(".download-actions,.hero-actions,.download-main,.download-band,.download-copy")||a.parentElement;
 box.appendChild(hostEl);
 }
+// Only mark / track true APK file URLs (not release pages or source links)
 document.querySelectorAll("a[href]").forEach(function(a){
 var h=a.getAttribute("href")||"";
-if(/\.apk($|\?)/i.test(h)||/\/releases\/(download|latest)/i.test(h)) a.setAttribute("data-dl-link","");
+if(isApkHref(h)) a.setAttribute("data-dl-link","");
+else a.removeAttribute("data-dl-link");
 });
 var last=cfg.s;
 function render(n){last=n;hostEl.textContent=n.toLocaleString("en-US")+" downloads";}
@@ -46,12 +50,17 @@ fetch(api+"/").then(function(r){return r.ok?r.json():null;}).then(function(d){
 if(d&&typeof d.count==="number")render(cfg.s+d.count);
 }).catch(function(){});
 var lock=false;
-function track(){
+function track(ev){
+var t=ev&&ev.currentTarget;
+var h=t&&t.getAttribute?t.getAttribute("href"):"";
+if(!isApkHref(h)) return;
 if(lock)return;lock=true;setTimeout(function(){lock=false;},2000);
 fetch(api+"/up").then(function(r){return r.ok?r.json():null;}).then(function(d){
 if(d&&typeof d.count==="number")render(cfg.s+d.count);else render(last+1);
 }).catch(function(){render(last+1);});
 }
-document.querySelectorAll("[data-dl-link]").forEach(function(a){a.addEventListener("click",track);});
+document.querySelectorAll("a[href]").forEach(function(a){
+if(isApkHref(a.getAttribute("href")||"")) a.addEventListener("click",track);
+});
 });
 })();
