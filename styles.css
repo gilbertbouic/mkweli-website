@@ -941,6 +941,15 @@ a:hover {
   margin-bottom: 1.25rem;
 }
 
+.dl-counter {
+  margin: 0.35rem 0 0.85rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  color: var(--text-dim);
+  opacity: 0.75;
+}
+
 .download-meta {
   margin: 0;
   font-size: 0.85rem;
