@@ -64,7 +64,7 @@
     // Keep primary CTA pointing at releases/latest so new versions work without republishing
     apk.setAttribute(
       "href",
-      "Mkweli_v1.0.12.apk"
+      "Mkweli_v1.0.13.apk"
     );
   }
 
