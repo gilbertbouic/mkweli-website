@@ -12,16 +12,19 @@
   border-radius: 0 !important;
 }
 .brand-orb-logo {
-  display: grid !important;
+  display: grid;
   place-items: center;
-  padding: 1.5rem !important;
-  background: #f4f4f2 !important;
+  padding: 1.25rem;
+  background: #f4f4f2;
   border-radius: 24px;
+  width: 168px;
+  height: 168px;
+  overflow: hidden;
 }
 .brand-orb-logo img {
-  width: min(100%, 340px) !important;
-  height: auto !important;
-  object-fit: contain !important;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 @media (prefers-color-scheme: dark) {
   .brand-orb-logo { background: #161a22 !important; }
@@ -163,8 +166,8 @@ a:hover {
 .brand-mark {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 8px;
+  object-fit: contain;
   box-shadow: 0 0 0 2px rgba(212, 175, 106, 0.35);
 }
 
@@ -323,7 +326,7 @@ a:hover {
 .hero {
   position: relative;
   padding: 4.5rem 0 5rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-glow {
@@ -453,44 +456,28 @@ a:hover {
 }
 
 .phone-notch {
-  position: absolute;
-  top: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90px;
-  height: 22px;
-  background: #000;
-  border-radius: 20px;
-  z-index: 3;
+  display: none;
 }
 
 .phone-screen {
   width: 100%;
+  height: auto;
   border-radius: 28px;
   display: block;
   background: #000;
+  object-fit: contain;
+  object-position: top center;
 }
 
 .brand-orb {
-  position: absolute;
-  right: -4%;
-  bottom: 4%;
-  width: 200px;
-  height: 280px;
-  border-radius: 24px;
-  overflow: hidden;
-  opacity: 0.92;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--line-strong);
-  z-index: 1;
-  transform: rotate(6deg);
+  display: none;
 }
 
 .brand-orb img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .float-card {
@@ -1194,8 +1181,9 @@ a:hover {
     grid-template-columns: 1fr 1fr;
   }
 
-  .brand-orb {
-    display: none;
+  .brand-orb,
+  .brand-orb-logo {
+    display: none !important;
   }
 
   .hero-visual {
