@@ -7,9 +7,9 @@
 - Support email: support@mkweli.tech
 - Publisher: Mkweli
 - Android package: com.mkwelimobile
-- Current version: 1.0.13 (versionCode 13)
-- Official APK only: https://aml.mkweli.tech/Mkweli_v1.0.13.apk
-- APK SHA-256: 3341ea8f7e5ea73e43c67fb3b72e5ad2dfa67efc4cf33cbca3e66e556efa8312
+- Current version: 1.0.14 (versionCode 14)
+- Official APK only: https://aml.mkweli.tech/Mkweli_v1.0.14.apk
+- APK SHA-256: d45f6cb26965bfbf6173c897be400096a945f71c9bf05b63b540339f919b9f18
 - Source: https://github.com/gilbertbouic/MkweliMobile
 - Not on Google Play (signed sideload APK)
 
