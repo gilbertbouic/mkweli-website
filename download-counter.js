@@ -2,7 +2,8 @@
 var map={
 "aml.mkweli.tech":{p:"aml",s:1254,sel:'#apk-download,a[href*=".apk"]'},
 "lakazagri.mkweli.tech":{p:"lakazagri",s:875,sel:'#download a[href*=".apk"]'},
-"ceb.mkweli.tech":{p:"ceb",s:28,sel:'#download a[href*=".apk"],a[href*=".apk"]'},
+"grid.mkweli.tech":{p:"grid",s:28,sel:'#download a[href*=".apk"],a[href*=".apk"]'},
+"ceb.mkweli.tech":{p:"grid",s:28,sel:'#download a[href*=".apk"],a[href*=".apk"]'},
 "assimilate-pro.mkweli.tech":{p:"assimilate",s:2438,sel:'#apk-link,a[href*=".apk"]'}
 };
 function isApkHref(h){
@@ -13,7 +14,7 @@ var cfg=map[host];
 if(!cfg){
 if(/aml|mkweli-website/i.test(location.pathname+location.href)) cfg=map["aml.mkweli.tech"];
 else if(/lakaz/i.test(location.pathname+location.href)) cfg=map["lakazagri.mkweli.tech"];
-else if(/ceb/i.test(location.pathname+location.href)) cfg=map["ceb.mkweli.tech"];
+else if(/grid|ceb/i.test(location.pathname+location.href)) cfg=map["grid.mkweli.tech"];
 else if(/assimilate/i.test(location.pathname+location.href)) cfg=map["assimilate-pro.mkweli.tech"];
 }
 if(!cfg) return;
