@@ -7,9 +7,9 @@
 - Support email: support@mkweli.tech
 - Publisher: Mkweli
 - Android package: com.mkwelimobile
-- Current version: 1.0.14 (versionCode 14)
-- Official APK only: https://aml.mkweli.tech/Mkweli_v1.0.14.apk
-- APK SHA-256: d45f6cb26965bfbf6173c897be400096a945f71c9bf05b63b540339f919b9f18
+- Current version: 1.0.15 (versionCode 15)
+- Official APK only: https://aml.mkweli.tech/Mkweli_v1.0.15.apk
+- APK SHA-256: 6801a6ef29cfbffb4e4765ded91893cf49daeff0df238b2136d580a53ce8bf98
 - Source: https://github.com/gilbertbouic/MkweliMobile
 - Not on Google Play (signed sideload APK)
 
@@ -20,7 +20,7 @@ Mkweli AML screens names on-device against:
 - EU financial sanctions (FSD)
 - UK FCDO sanctions list
 
-Languages: EN / FR / PT / ES. Free, no per-seat licence. Token matching with strong/possible ranks (not full KYC / not a full AML suite).
+Languages: EN / FR / PT / ES. Free, no per-seat licence. Token matching with strong/possible ranks (not full KYC / not a full AML suite). After list updates, Names loaded and total names always show the same figure (sum of UN / EU / UK / USA counts).
 
 ## Related
 - Sister product LakazAgri: https://lakazagri.mkweli.tech/
