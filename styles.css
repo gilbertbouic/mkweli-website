@@ -30,7 +30,7 @@
   .brand-orb-logo { background: #161a22 !important; }
 }
 /* =========================================================
-   Mkweli AML — Marketing site
+   Mkweli AML - Marketing site
    Palette: deep navy, gold justice accent, electric blue CTA
    ========================================================= */
 
@@ -268,6 +268,50 @@ a:hover {
 
 .mobile-nav a:hover {
   background: rgba(255, 255, 255, 0.04);
+}
+
+.nav-end {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.12rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.lang-switch a {
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 0.28rem 0.45rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.lang-switch a:hover,
+.lang-switch a[aria-current="true"] {
+  color: var(--gold-soft);
+}
+
+.lang-switch a[aria-current="true"] {
+  background: rgba(212, 175, 106, 0.16);
+}
+
+.mobile-nav .lang-switch {
+  margin-top: 0.4rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mobile-nav .lang-switch a {
+  padding: 0.28rem 0.45rem;
 }
 
 /* ---------- Buttons ---------- */
@@ -1079,7 +1123,7 @@ a:hover {
 }
 
 .faq-list details[open] summary::after {
-  content: "–";
+  content: "-";
 }
 
 .faq-list details p {

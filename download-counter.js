@@ -45,7 +45,7 @@ if(isApkHref(h)) a.setAttribute("data-dl-link","");
 else a.removeAttribute("data-dl-link");
 });
 var last=cfg.s;
-function render(n){last=n;hostEl.textContent=n.toLocaleString("en-US")+" downloads";}
+function render(n){last=n;var fr=(document.documentElement.lang||"").toLowerCase().indexOf("fr")===0;hostEl.textContent=n.toLocaleString(fr?"fr-FR":"en-US")+(fr?" téléchargements":" downloads");}
 render(cfg.s);
 fetch(api+"/").then(function(r){return r.ok?r.json():null;}).then(function(d){
 if(d&&typeof d.count==="number")render(cfg.s+d.count);

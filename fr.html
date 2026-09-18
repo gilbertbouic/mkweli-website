@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mkweli AML - Application gratuite de filtrage de sanctions hors ligne (OFAC, ONU, UE, Royaume-Uni)</title>
+  <meta name="description" content="Mkweli AML est une application Android gratuite et open source pour le filtrage nominatif de sanctions hors ligne : listes OFAC SDN, ONU, UE et Royaume-Uni (FCDO). Sur l'appareil, multilingue, sans cloud. Version 1.0.15." />
+  <meta name="keywords" content="Mkweli AML, application LBA gratuite, filtrage de sanctions, filtrage OFAC SDN, contrôle de sanctions hors ligne, filtrage nominatif, application liste ONU, sanctions financières UE, sanctions FCDO Royaume-Uni, application conformité Maurice, LBA transferts d'argent, filtrage de sanctions mobile" />
+  <meta name="author" content="Mkweli" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#070b14" />
+  <meta name="geo.region" content="MU" />
+  <meta name="geo.placename" content="Maurice" />
+  <meta name="language" content="French" />
+  <link rel="canonical" href="https://aml.mkweli.tech/fr.html" />
+  <link rel="alternate" hreflang="en" href="https://aml.mkweli.tech/" />
+  <link rel="alternate" hreflang="fr" href="https://aml.mkweli.tech/fr.html" />
+  <link rel="alternate" hreflang="x-default" href="https://aml.mkweli.tech/" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Mkweli AML" />
+  <meta property="og:locale" content="fr_MU" />
+  <meta property="og:locale:alternate" content="en_MU" />
+  <meta property="og:title" content="Mkweli AML - Filtrage de sanctions hors ligne gratuit (v1.0.15)" />
+  <meta property="og:description" content="APK Android gratuit et open source. Filtrez les noms sur l'appareil contre les listes OFAC SDN, ONU, UE et Royaume-Uni (FCDO). Sans cloud." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aml.mkweli.tech/fr.html" />
+  <meta property="og:image" content="https://aml.mkweli.tech/assets/og-image.jpg?v=20260821b" />
+  <meta property="og:image:secure_url" content="https://aml.mkweli.tech/assets/og-image.jpg?v=20260821b" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Mkweli AML v1.0.15 - filtrage de sanctions hors ligne gratuit" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mkweli AML - Filtrage de sanctions hors ligne gratuit (v1.0.15)" />
+  <meta name="twitter:description" content="Listes OFAC, ONU, UE et Royaume-Uni (FCDO) sur l'appareil. APK Android gratuit et open source. support@mkweli.tech" />
+  <meta name="twitter:image" content="https://aml.mkweli.tech/assets/og-image.jpg?v=20260821b" />
+  <meta name="twitter:image:alt" content="Mkweli AML v1.0.15 filtrage de sanctions" />
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://aml.mkweli.tech/sitemap.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://aml.mkweli.tech/#website",
+        "url": "https://aml.mkweli.tech/",
+        "name": "Mkweli AML",
+        "description": "Filtrage nominatif de sanctions hors ligne, gratuit et open source, pour les institutions financières - OFAC SDN, ONU, UE et Royaume-Uni (FCDO).",
+        "inLanguage": "fr",
+        "publisher": { "@id": "https://mkweli.tech/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://mkweli.tech/#organization",
+        "name": "Mkweli",
+        "url": "https://mkweli.tech/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://aml.mkweli.tech/assets/logo-full.png",
+          "width": 873,
+          "height": 396
+        },
+        "email": "support@mkweli.tech",
+        "areaServed": "Worldwide",
+        "sameAs": [
+          "https://mkweli.tech/",
+          "https://lakazagri.mkweli.tech/",
+          "https://cfw.mkweli.tech/",
+          "https://grid.mkweli.tech/",
+          "https://assimilate-pro.mkweli.tech/",
+          "https://github.com/gilbertbouic"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://aml.mkweli.tech/#app",
+        "name": "Mkweli AML",
+        "applicationCategory": "FinanceApplication",
+        "applicationSubCategory": "Compliance",
+        "operatingSystem": "Android 7.0+",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Application Android gratuite et open source pour le filtrage nominatif de sanctions hors ligne : listes OFAC SDN, Conseil de sécurité de l'ONU, sanctions financières de l'UE et FCDO du Royaume-Uni. Le filtrage s'exécute sur l'appareil.",
+        "url": "https://aml.mkweli.tech/fr.html",
+        "downloadUrl": "https://aml.mkweli.tech/Mkweli_v1.0.15.apk",
+        "softwareVersion": "1.0.15",
+        "installUrl": "https://aml.mkweli.tech/Mkweli_v1.0.15.apk",
+        "image": "https://aml.mkweli.tech/assets/og-image.jpg?v=20260821b",
+        "author": { "@id": "https://mkweli.tech/#organization" },
+        "codeRepository": "https://github.com/gilbertbouic/MkweliMobile",
+        "featureList": [
+          "Filtrage OFAC SDN",
+          "Liste consolidée du Conseil de sécurité de l'ONU",
+          "Sanctions financières de l'UE",
+          "Liste de sanctions FCDO du Royaume-Uni",
+          "Filtrage hors ligne sur l'appareil",
+          "Correspondance par jetons avec rangs forte/possible",
+          "Totaux Noms chargés et mise à jour identiques",
+          "Anglais, français, portugais, espagnol"
+        ],
+        "inLanguage": ["en", "fr", "pt", "es"]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://aml.mkweli.tech/fr.html#webpage",
+        "url": "https://aml.mkweli.tech/fr.html",
+        "name": "Mkweli AML - Filtrage de sanctions hors ligne gratuit",
+        "isPartOf": { "@id": "https://aml.mkweli.tech/#website" },
+        "about": { "@id": "https://aml.mkweli.tech/#app" },
+        "description": "Page produit officielle de Mkweli AML v1.0.15 - filtrage nominatif de sanctions hors ligne, gratuit.",
+        "inLanguage": "fr",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://aml.mkweli.tech/assets/og-image.jpg?v=20260821b"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://aml.mkweli.tech/fr.html#faq",
+        "inLanguage": "fr",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Mkweli est-il un système de conformité LBA complet ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. C'est un outil ciblé de filtrage nominatif des sanctions. Vous avez toujours besoin de politiques, d'une évaluation des risques, d'une surveillance des transactions, de processus SAR et d'une gouvernance adaptés à votre licence et à votre régulateur."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Mkweli AML a-t-il besoin d'Internet ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le filtrage fonctionne hors ligne avec les listes stockées sur l'appareil. Internet n'est nécessaire que pour télécharger l'APK et actualiser les listes depuis les sources officielles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quelles listes de sanctions sont incluses ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OFAC SDN des États-Unis, liste consolidée du Conseil de sécurité des Nations Unies, sanctions financières de l'Union européenne, et liste de sanctions FCDO du Royaume-Uni. Si l'hôte officiel de l'UE est injoignable, ou si le CSV officiel du Royaume-Uni est trop volumineux pour un téléphone (~50MB), l'application utilise des miroirs CDN OpenSanctions des mêmes listes. Les effectifs changent au fil des mises à jour de ces listes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "L'application Mkweli AML est-elle gratuite ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. L'APK Android est gratuit à télécharger et à utiliser. Il n'y a pas de frais de licence par poste. Le code source est sur GitHub."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment vérifier l'APK ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Téléchargez uniquement depuis aml.mkweli.tech. La version actuelle est Mkweli_v1.0.15.apk, package com.mkwelimobile. Comparez le SHA-256 du fichier indiqué dans la section téléchargement de cette page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Pouvons-nous utiliser Mkweli en complément de notre prestataire LBA actuel ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. De nombreuses équipes utilisent Mkweli comme complément mobile ou hors ligne aux systèmes centraux : pour les agences, les agents, ou un filtrage de secours."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Accueil Mkweli AML">
+        <span class="brand-mark-wrap">
+          <img src="assets/logo.png" alt="" width="40" height="40" class="brand-mark logo-light" />
+          <img src="assets/logo-on-dark.png" alt="" width="40" height="40" class="brand-mark logo-dark" />
+        </span>
+        <span class="brand-text">
+          <strong>Mkweli</strong>
+          <span>AML</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#how">Fonctionnement</a>
+        <a href="#lists">Listes</a>
+        <a href="#download" class="nav-cta">Télécharger</a>
+      </nav>
+      <div class="nav-end">
+        <div class="lang-switch" aria-label="Langue">
+          <a href="index.html" lang="en" hreflang="en">EN</a>
+          <a href="fr.html" lang="fr" hreflang="fr" aria-current="true">FR</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <a href="#features">Fonctionnalités</a>
+      <a href="#how">Fonctionnement</a>
+      <a href="#lists">Listes</a>
+      <a href="#download">Télécharger</a>
+      <a href="mailto:support@mkweli.tech">Contact</a>
+      <div class="lang-switch" aria-label="Langue">
+        <a href="index.html" lang="en" hreflang="en">EN</a>
+        <a href="fr.html" lang="fr" hreflang="fr" aria-current="true">FR</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="dot"></span>
+            Gratuit · Prêt hors ligne · Conçu pour les équipes conformité
+          </p>
+          <h1>
+            Filtrage des sanctions<br />
+            <em>avant chaque paiement.</em>
+          </h1>
+          <p class="lede">
+            Mkweli AML est une application Android gratuite qui filtre les noms sur les
+            listes de sanctions <strong>OFAC, ONU, UE et Royaume-Uni</strong> - sur l'appareil,
+            en quelques secondes, sans dépendance au cloud.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://aml.mkweli.tech/Mkweli_v1.0.15.apk" download="Mkweli_v1.0.15.apk" data-dl-link>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0l4-4m-4 4l-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Télécharger l'APK gratuit v1.0.15
+            </a>
+            <a class="btn btn-ghost" href="#how">Voir le fonctionnement</a>
+          </div>
+          <ul class="trust-row" aria-label="Chiffres clés">
+            <li>
+              <strong>v1.0.15</strong>
+              <span>APK actuel</span>
+            </li>
+            <li>
+              <strong>4</strong>
+              <span>listes officielles</span>
+            </li>
+            <li>
+              <strong>Gratuit</strong>
+              <span>sans frais de licence</span>
+            </li>
+            <li>
+              <strong>EN · FR · PT · ES</strong>
+              <span>langues</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone-frame" aria-hidden="true">
+            <div class="phone-notch"></div>
+            <img
+              src="assets/app-ui.jpg?v=20260821b"
+              srcset="assets/app-ui-sm.jpg?v=20260821b 360w, assets/app-ui.jpg?v=20260821b 720w"
+              sizes="(max-width: 640px) 240px, 280px"
+              alt="Écran de l'application Mkweli AML : listes de sanctions, Effacer toutes les recherches, et filtrage de noms"
+              width="720"
+              height="1480"
+              class="phone-screen"
+            />
+          </div>
+          <div class="float-card float-card-1">
+            <span class="fc-icon ok">✓</span>
+            <div>
+              <strong>Aucune correspondance</strong>
+              <span>Pas de correspondance sur les listes</span>
+            </div>
+          </div>
+          <div class="float-card float-card-2">
+            <span class="fc-icon warn">!</span>
+            <div>
+              <strong>Correspondance possible</strong>
+              <span>Examiner avant le paiement</span>
+            </div>
+          </div>
+          <div class="brand-orb brand-orb-logo">
+            <img class="logo-light" src="assets/logo.png" alt="Mkweli" width="160" height="160" />
+            <img class="logo-dark" src="assets/logo-on-dark.png" alt="Mkweli" width="160" height="160" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF / AUDIENCE -->
+    <section class="strip" aria-label="Public visé">
+      <div class="container strip-inner">
+        <p>Conçu pour les équipes qui ne peuvent pas se permettre une correspondance manquée - ni une amende à six chiffres.</p>
+        <div class="strip-tags">
+          <span>Banques et IFNB</span>
+          <span>Remises de fonds et MSB</span>
+          <span>Fintech et PSP</span>
+          <span>Responsables conformité</span>
+          <span>Terrain et agences</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM / VALUE -->
+    <section class="section value" id="value">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Pourquoi Mkweli</p>
+          <h2>Les outils de conformité ne devraient pas coûter plus cher que le risque qu'ils évitent</h2>
+          <p class="section-lede">
+            Les suites LBA d'entreprise sont puissantes - et chères, verrouillées dans le cloud, et lentes à déployer.
+            Mkweli place le filtrage essentiel des sanctions sur chaque téléphone Android que vos équipes ont déjà.
+          </p>
+        </div>
+        <div class="value-grid">
+          <article class="value-card">
+            <div class="value-num">01</div>
+            <h3>Contrôlez avant d'envoyer</h3>
+            <p>Vérifiez les contreparties sur les listes mondiales avant chaque paiement entrant ou sortant - réduisez le risque de manquement réglementaire et d'amende au moment de la décision.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-num">02</div>
+            <h3>Fonctionne sans le cloud</h3>
+            <p>Les listes sont fournies avec l'application. Filtrez hors ligne en agence, en bureau rural, ou partout où la connexion est peu fiable. Mettez à jour une fois de retour en ligne.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-num">03</div>
+            <h3>Aucun frais de licence</h3>
+            <p>APK gratuit pour les institutions financières et les équipes conformité. Déployez largement, sans cycles d'achat par poste ni renouvellements annuels.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section features" id="features">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Capacités</p>
+          <h2>Tout ce qu'il faut pour filtrer au moment du paiement</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8.5-8 9.5C7.5 20.5 4 17 4 12V7l8-4z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Couverture multi-listes</h3>
+            <p>Filtrez en une recherche sur OFAC SDN (USA), Nations Unies, Union européenne et sanctions consolidées du Royaume-Uni.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+            <h3>Sur l'appareil, hors ligne</h3>
+            <p>Les listes sont fournies avec l'application et peuvent être actualisées dans l'app. Le filtrage fonctionne sans Internet après l'installation - idéal pour les équipes de terrain et les sites à faible bande passante.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16 15l2 2 3-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Mises à jour des listes en un geste</h3>
+            <p>Récupérez les données les plus récentes depuis les sources officielles lorsque vous êtes en ligne. Restez à jour sans attendre une nouvelle version de l'application.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 8h14v11a2 2 0 01-2 2H7a2 2 0 01-2-2V8z" stroke="currentColor" stroke-width="1.6"/><path d="M9 8V6a3 3 0 016 0v2" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="14" r="1.5" fill="currentColor"/></svg>
+            </div>
+            <h3>Confidentialité d'abord</h3>
+            <p>Le filtrage s'exécute localement. Les noms que vous contrôlez n'ont pas besoin de quitter l'appareil pour un appel d'API cloud.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.6"/><path d="M8 10h3M8 14h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Interface multilingue</h3>
+            <p>Passez de l'anglais au français, au portugais et à l'espagnol pour que le personnel d'agence travaille dans la langue du quotidien.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M13 3L5 14h6l-1 7 9-12h-6l0-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Des secondes, pas des minutes</h3>
+            <p>Saisissez un nom, appuyez sur Contrôler, obtenez un résultat clair. Conçu pour les guichets, les files d'ouverture de compte et les opérations de paiement - pas pour des assistants à longs formulaires.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section how" id="how">
+      <div class="container how-grid">
+        <div class="how-copy">
+          <p class="eyebrow">Fonctionnement</p>
+          <h2>De l'installation au premier contrôle en moins de cinq minutes</h2>
+          <ol class="steps">
+            <li>
+              <span class="step-n">1</span>
+              <div>
+                <h3>Installez l'APK gratuit</h3>
+                <p>Téléchargez pour Android et autorisez l'installation depuis votre navigateur si demandé. Aucun compte n'est requis pour commencer à filtrer.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-n">2</span>
+              <div>
+                <h3>Vérifiez que les listes sont chargées</h3>
+                <p>Ouvrez l'application - vous verrez les compteurs USA (OFAC SDN), ONU, UE et Royaume-Uni. Appuyez sur <em>Mettre à jour les listes</em> lorsque vous avez une connexion.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-n">3</span>
+              <div>
+                <h3>Contrôlez avant le paiement</h3>
+                <p>Saisissez le nom de la contrepartie, appuyez sur <strong>Contrôler</strong>, et agissez sur le résultat avant de traiter le virement.</p>
+              </div>
+            </li>
+          </ol>
+          <a class="btn btn-primary" href="#download">Obtenir l'application</a>
+        </div>
+        <aside class="how-panel" aria-label="Flux recommandé">
+          <h3>Flux recommandé</h3>
+          <ul>
+            <li><strong>Ouverture de compte</strong> - contrôlez les nouveaux clients à l'entrée en relation</li>
+            <li><strong>Paiements sortants</strong> - vérifiez les noms des bénéficiaires</li>
+            <li><strong>Fonds entrants</strong> - vérifiez le donneur d'ordre / l'ordonnateur</li>
+            <li><strong>Revue périodique</strong> - recontrôlez les relations à haut risque</li>
+            <li><strong>Habitude hebdomadaire</strong> - mettez à jour les listes selon un calendrier connu</li>
+          </ul>
+          <p class="how-note">
+            Mkweli appuie les contrôles opérationnels. Il ne remplace pas un programme LBA complet, une évaluation des risques, ni les attentes de votre régulateur - il rend le filtrage nominatif disponible partout où vos équipes travaillent.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- LISTS -->
+    <section class="section lists" id="lists">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Listes de surveillance</p>
+          <h2>Sources officielles. Couverture transparente.</h2>
+          <p class="section-lede">
+            Les données proviennent des flux publics primaires. Les effectifs changent avec ces listes - l'application affiche les compteurs à jour après chaque mise à jour réussie.
+          </p>
+        </div>
+        <div class="list-grid">
+          <article class="list-card">
+            <span class="list-flag">USA</span>
+            <h3>OFAC SDN</h3>
+            <p class="list-count">U.S. Treasury</p>
+            <p>Specially Designated Nationals and Blocked Persons (SDN CSV), avec repli CDN lorsque l'hôte officiel est injoignable.</p>
+          </article>
+          <article class="list-card">
+            <span class="list-flag">UN</span>
+            <h3>Nations Unies</h3>
+            <p class="list-count">Conseil de sécurité</p>
+            <p>Liste consolidée des sanctions du Conseil de sécurité de l'ONU (XML).</p>
+          </article>
+          <article class="list-card">
+            <span class="list-flag">EU</span>
+            <h3>Union européenne</h3>
+            <p class="list-count">Sanctions financières</p>
+            <p>Liste complète des sanctions financières de l'UE (CSV) depuis le flux FSD officiel.</p>
+          </article>
+          <article class="list-card">
+            <span class="list-flag">UK</span>
+            <h3>Royaume-Uni</h3>
+            <p class="list-count">FCDO</p>
+            <p>UK Sanctions List publiée par le Foreign, Commonwealth &amp; Development Office (CSV).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- USE CASES -->
+    <section class="section use-cases" id="use-cases">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Là où ça compte</p>
+          <h2>Déployez le filtrage là où vos équipes travaillent déjà</h2>
+        </div>
+        <div class="use-grid">
+          <article class="use-card">
+            <h3>Guichets et agences</h3>
+            <p>Donnez à chaque caissier un contrôle le jour même, sans attendre un système de bureau ou une file d'opérations centrales.</p>
+          </article>
+          <article class="use-card">
+            <h3>Couloirs de transfert</h3>
+            <p>Filtrez expéditeurs et destinataires dans les réseaux d'agents qui tournent surtout sur des téléphones Android.</p>
+          </article>
+          <article class="use-card">
+            <h3>Secours quand les systèmes tombent</h3>
+            <p>Quand le système bancaire central ou le portail LBA du prestataire est hors service, faites avancer les paiements critiques avec un outil hors ligne.</p>
+          </article>
+          <article class="use-card">
+            <h3>Petites et moyennes IF</h3>
+            <p>Démarrez un filtrage nominatif formel sans achat d'entreprise - gratuit, installable le jour même.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD CTA -->
+    <section class="section download" id="download">
+      <div class="container download-panel">
+        <div class="download-copy">
+          <p class="eyebrow light">Pour commencer</p>
+          <h2>Téléchargez Mkweli AML gratuitement</h2>
+          <p>
+            APK Android · sans abonnement · fonctionne hors ligne après installation.
+            Actualisez les listes de sanctions dans l'application lorsque vous avez une connexion.
+          </p>
+          <div class="download-actions">
+            <a
+              class="btn btn-primary btn-lg"
+              href="https://aml.mkweli.tech/Mkweli_v1.0.15.apk"
+              id="apk-download"
+              download="Mkweli_v1.0.15.apk"
+              rel="noopener noreferrer"
+              data-dl-link
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0l4-4m-4 4l-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Télécharger l'APK gratuit v1.0.15
+            </a>
+            <a class="btn btn-ghost light" href="https://github.com/gilbertbouic/MkweliMobile" rel="noopener noreferrer">Code source sur GitHub</a>
+          </div>
+          <p
+            class="dl-counter"
+            data-dl-counter
+            data-dl-product="aml"
+            data-dl-seed="1254"
+            aria-live="polite"
+          >1 254 téléchargements</p>
+          <p class="download-meta">
+            Hôte de téléchargement officiel : <strong>aml.mkweli.tech</strong> uniquement.
+            Android 7.0+ (API 24). Activez « Installer des applications inconnues » pour votre navigateur si demandé.
+            Non distribué sur Google Play.
+          </p>
+          <dl class="verify-block">
+            <div>
+              <dt>Fichier</dt>
+              <dd><code>Mkweli_v1.0.15.apk</code></dd>
+            </div>
+            <div>
+              <dt>Package</dt>
+              <dd><code>com.mkwelimobile</code></dd>
+            </div>
+            <div>
+              <dt>Version</dt>
+              <dd><code>1.0.15</code> (versionCode 15)</dd>
+            </div>
+            <div>
+              <dt>SHA-256</dt>
+              <dd><code class="sha">6801a6ef29cfbffb4e4765ded91893cf49daeff0df238b2136d580a53ce8bf98</code></dd>
+            </div>
+            <div>
+              <dt>Support</dt>
+              <dd><a href="mailto:support@mkweli.tech">support@mkweli.tech</a></dd>
+            </div>
+          </dl>
+        </div>
+        <div class="download-side">
+          <div class="checklist">
+            <h3>Ce que vous obtenez</h3>
+            <ul>
+              <li>Application Android autonome (filtrage sur l'appareil)</li>
+              <li>Listes OFAC SDN · ONU · UE · FCDO Royaume-Uni</li>
+              <li>Mises à jour dans l'app depuis les flux publics officiels</li>
+              <li>Correspondance par jetons avec rangs forte / possible</li>
+              <li>Effacer toutes les recherches (champ, résultats et récents)</li>
+              <li>Noms chargés et totaux de mise à jour toujours identiques</li>
+              <li>Replis CDN OpenSanctions UE / Royaume-Uni (le CSV officiel du Royaume-Uni fait ~50MB)</li>
+              <li>Interface EN / FR / PT / ES</li>
+              <li>Gratuit · open source · sans frais par poste</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container narrow">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Réponses directes pour les équipes conformité</h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Mkweli est-il un système de conformité LBA complet ?</summary>
+            <p>Non. C'est un outil ciblé de <strong>filtrage nominatif des sanctions</strong>. Vous avez toujours besoin de politiques, d'une évaluation des risques, d'une surveillance des transactions, de processus SAR, et d'une gouvernance adaptés à votre licence et à votre régulateur. Vérifiez toujours les correspondances critiques auprès des sources officielles primaires avant de bloquer ou de déclarer.</p>
+          </details>
+          <details>
+            <summary>Faut-il Internet ?</summary>
+            <p>Le filtrage fonctionne hors ligne avec les listes stockées sur l'appareil. Internet n'est nécessaire que pour télécharger l'APK et actualiser les listes depuis les flux publics officiels.</p>
+          </details>
+          <details>
+            <summary>Quelles listes sont incluses ?</summary>
+            <p>OFAC SDN des États-Unis, liste consolidée du Conseil de sécurité des Nations Unies, sanctions financières de l'Union européenne, et liste de sanctions FCDO du Royaume-Uni. Les flux officiels sont essayés en premier. Si l'hôte de l'UE ne répond pas ou est bloqué, ou si le CSV officiel du Royaume-Uni est trop volumineux pour un téléphone (~50MB de textes de motivation), l'application utilise des miroirs CDN OpenSanctions des mêmes listes. Les effectifs changent avec ces listes. Après chaque mise à jour réussie, <strong>Noms chargés</strong> et la ligne <strong>noms au total</strong> de la mise à jour indiquent le même chiffre - la somme des compteurs ONU, UE, Royaume-Uni et USA.</p>
+          </details>
+          <details>
+            <summary>Comment fonctionne la correspondance de noms ?</summary>
+            <p>La v1.0.15 utilise la <strong>correspondance par jetons</strong> (parties de nom, n'importe quel ordre) avec des scores classés <em>forte</em> et <em>possible</em>. Ce n'est pas une correspondance floue phonétique, ni une plateforme KYC complète.</p>
+          </details>
+          <details>
+            <summary>L'application est-elle gratuite et qui la publie ?</summary>
+            <p>Oui - APK Android gratuit, sans frais par poste. Publié par <strong>Mkweli</strong> (<a href="https://mkweli.tech/">mkweli.tech</a>). Source : <a href="https://github.com/gilbertbouic/MkweliMobile" rel="noopener noreferrer">github.com/gilbertbouic/MkweliMobile</a>. Contact : <a href="mailto:support@mkweli.tech">support@mkweli.tech</a>.</p>
+          </details>
+          <details>
+            <summary>Comment vérifier que le téléchargement est authentique ?</summary>
+            <p>Téléchargez uniquement depuis <strong>https://aml.mkweli.tech/</strong>. Fichier actuel : <code>Mkweli_v1.0.15.apk</code>, package <code>com.mkwelimobile</code>. Comparez le SHA-256 de la section téléchargement de cette page avec le fichier reçu.</p>
+          </details>
+          <details>
+            <summary>Pouvons-nous l'utiliser en complément de notre prestataire actuel ?</summary>
+            <p>Oui. De nombreuses équipes utilisent Mkweli comme complément mobile / hors ligne aux systèmes centraux - pour les agences, les agents, ou un filtrage de secours.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark-wrap">
+            <img src="assets/logo.png" alt="" width="36" height="36" class="brand-mark logo-light" />
+            <img src="assets/logo-on-dark.png" alt="" width="36" height="36" class="brand-mark logo-dark" />
+          </span>
+          <span class="brand-text">
+            <strong>Mkweli</strong>
+            <span>AML</span>
+          </span>
+        </a>
+        <p>Des outils numériques pratiques pour le terrain. Mkweli AML est une application de filtrage nominatif de sanctions, gratuite et open source, pour les institutions financières - pas une suite LBA complète.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Produit</h4>
+        <a href="#features">Fonctionnalités</a>
+        <a href="#how">Fonctionnement</a>
+        <a href="#download">Télécharger v1.0.15</a>
+        <a href="https://github.com/gilbertbouic/MkweliMobile" rel="noopener noreferrer">Code source</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:support@mkweli.tech">support@mkweli.tech</a>
+        <a href="https://mkweli.tech/">mkweli.tech - hub produits</a>
+        <a href="https://lakazagri.mkweli.tech/">LakazAgri</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Mkweli · aml.mkweli.tech · package <code>com.mkwelimobile</code></p>
+      <p class="footer-note">Les données de sanctions proviennent de listes officielles publiques. Vérifiez toujours les correspondances critiques auprès des sources primaires avant de bloquer ou de déclarer. Non affilié à l'OFAC, à l'ONU, à l'UE ou au gouvernement du Royaume-Uni.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

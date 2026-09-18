@@ -24,6 +24,21 @@
     });
   }
 
+  /* Keep the current section when switching EN <-> FR. */
+  const PAGE_TWINS = {
+    "/": { en: "/", fr: "/fr.html" },
+    "/index.html": { en: "/", fr: "/fr.html" },
+    "/fr.html": { en: "/", fr: "/fr.html" },
+  };
+  const path = location.pathname.replace(/\/+$/, "") || "/";
+  const twins = PAGE_TWINS[path] || PAGE_TWINS[path + ".html"];
+  if (twins) {
+    document.querySelectorAll(".lang-switch a[hreflang]").forEach((a) => {
+      const dest = twins[a.getAttribute("hreflang")];
+      if (dest) a.setAttribute("href", dest + location.hash);
+    });
+  }
+
   // Header shadow on scroll
   const header = document.querySelector(".site-header");
   const onScroll = () => {
