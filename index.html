@@ -47,7 +47,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20261003b" />
 
   <script type="application/ld+json">
   {
@@ -171,7 +171,7 @@
             "name": "How do I verify the APK?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Download only from aml.mkweli.tech. Current build is Mkweli_v1.0.16.apk, package com.mkwelimobile. Compare the file SHA-256 shown on the download section of this page."
+              "text": "Download only from aml.mkweli.tech. Current build is Mkweli_v1.0.16.apk, package com.mkwelimobile. SHA-256: e1751cd8d9970499ee24f3f32edc33ac20c0c34e6dc59b085701a381fc767dbc."
             }
           },
           {
@@ -258,6 +258,10 @@
             </a>
             <a class="btn btn-ghost" href="#how">See how it works</a>
           </div>
+          <p class="hero-sha">
+            SHA-256 of <code>Mkweli_v1.0.16.apk</code>
+            <code class="apk-checksum-value">e1751cd8d9970499ee24f3f32edc33ac20c0c34e6dc59b085701a381fc767dbc</code>
+          </p>
           <ul class="trust-row" aria-label="Key facts">
             <li>
               <strong>v1.0.16</strong>
@@ -550,6 +554,11 @@
             </a>
             <a class="btn btn-ghost light" href="https://github.com/gilbertbouic/MkweliMobile" rel="noopener noreferrer">Source on GitHub</a>
           </div>
+          <div class="apk-checksum">
+            <p class="apk-checksum-label">SHA-256 of this APK</p>
+            <code class="apk-checksum-value" id="apk-sha">e1751cd8d9970499ee24f3f32edc33ac20c0c34e6dc59b085701a381fc767dbc</code>
+            <button type="button" class="sha-copy" data-copy-target="apk-sha" data-copied-label="Copied">Copy SHA-256</button>
+          </div>
           <p
             class="dl-counter"
             data-dl-counter
@@ -634,7 +643,7 @@
           </details>
           <details>
             <summary>How do I verify the download is genuine?</summary>
-            <p>Download only from <strong>https://aml.mkweli.tech/</strong>. Current file: <code>Mkweli_v1.0.16.apk</code>, package <code>com.mkwelimobile</code>. Compare the SHA-256 in the download section of this page with the file you received.</p>
+            <p>Download only from <strong>https://aml.mkweli.tech/</strong>. Current file: <code>Mkweli_v1.0.16.apk</code>, package <code>com.mkwelimobile</code>. SHA-256: <code class="sha">e1751cd8d9970499ee24f3f32edc33ac20c0c34e6dc59b085701a381fc767dbc</code>.</p>
           </details>
           <details>
             <summary>Can we use it alongside our existing vendor?</summary>
@@ -680,6 +689,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20261003b"></script>
 </body>
 </html>

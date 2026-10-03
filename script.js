@@ -73,6 +73,37 @@
     targets.forEach((el) => io.observe(el));
   }
 
+  document.querySelectorAll("[data-copy-target]").forEach((btn) => {
+    const idle = btn.textContent;
+    const done = btn.getAttribute("data-copied-label") || "Copied";
+    btn.addEventListener("click", async () => {
+      const el = document.getElementById(btn.getAttribute("data-copy-target"));
+      const value = (el && el.textContent ? el.textContent : "").replace(/\s+/g, "");
+      if (!value) return;
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(value);
+        } else {
+          const area = document.createElement("textarea");
+          area.value = value;
+          area.setAttribute("readonly", "");
+          area.style.position = "fixed";
+          area.style.left = "-9999px";
+          document.body.appendChild(area);
+          area.select();
+          document.execCommand("copy");
+          area.remove();
+        }
+        btn.textContent = done;
+        window.setTimeout(() => {
+          btn.textContent = idle;
+        }, 1600);
+      } catch {
+        btn.textContent = idle;
+      }
+    });
+  });
+
   // Prefer latest release page; fall back note is already in HTML
   const apk = document.getElementById("apk-download");
   if (apk) {
