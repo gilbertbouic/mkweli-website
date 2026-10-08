@@ -114,12 +114,4 @@
     );
   }
 
-  // Load shared download counter (seeded, unobtrusive)
-  (function () {
-    var s = document.createElement("script");
-    s.src = "download-counter.js";
-    s.defer = true;
-    document.head.appendChild(s);
-  })();
-
 })();
